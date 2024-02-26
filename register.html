@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script src="institute.js"></script>
+    <header class="container-fluid sticky-top p-0">
+        <nav class="navbar navbar-expand-md ">
+            <a href="" class="navbar-brand ms-5">
+                <img src="assets/logo.webp" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-target="#myNav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="myNav" class="collapse navbar-collapse justify-content-end me-5">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="batches.html" class="nav-link">New Batches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courses" class="nav-link">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Registrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------commen banner------------------------ -->
+    <section class="container-fluid p-0 aboutus-banner">
+        <!-- <img src="assets/banner2.avif" alt=""> -->
+        <h1>Registration Forms</h1>
+    </section>
+    <!-- -----------------------------------commen banner end--------------------- -->
+    <!-- -----------------------------------------student registration start-------------- -->
+
+    <section class="container ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-xl-8 text-center p-5 student-form">
+                <form action="">
+                    <h1 class="ms-4 mb-5">Student Registration Form</h1>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Course name" aria-label="First name">
+                        </div>
+                        <div class="col">
+
+                            <select name="" id="" class="form-select">
+                                <option value="" hidden>Training Type </option>
+                                <option value="">Classroom Training</option>
+                                <option value="">Online Training</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <select name="" id="" class="form-select">
+                                <option value="" hidden>Interested Courses</option>
+                                <option value="">Python Fullstack</option>
+                                <option value="">MERN Full Stack Developer</option>
+                                <option value="">UI Development</option>
+                                <option value="">React JS</option>
+                                <option value="">UI/UX Designing</option>
+                                <option value="">Node JS</option>
+                                <option value="">Web Designing</option>
+                                <option value="">PHP with MySQL</option>
+                                <option value="">Digital Marketing</option>
+                                <option value="">Python</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row m-4">
+                        <textarea class="form-control" placeholder="Message" name="" id="" cols="30"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="row m-3 text-center px-5">
+                        <div class="col-1">
+                            <input class="form-check-input text-end" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-check-label text-start" for="flexCheckDefault">
+                                Accept Terms & Conditions
+                              </label>
+                        </div>
+                    </div>
+                    
+                    <input class="btn btn-danger ms-3" type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------student registration end-------------- -->
+    <!-- -----------------------------------------Faculty registration start-------------- -->
+
+    <section class="container ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-xl-8 text-center p-5 student-form">
+                <h1 class="ms-4 mb-5">Faculty Registration Form</h1>
+                <form  action="finalpage.html" method="post" onsubmit="return validate()">
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" id="name" class="form-control" placeholder="Name">
+                            <p id="nameNote"></p>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="email" class="form-control" placeholder="Email">
+                            <p id="emailNote" ></p>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" id="phone" class="form-control" placeholder="Phone">
+                            <p id="phoneNote" ></p>
+                        </div>
+                        <div class="col">
+                            <select name="" id="course" class="form-select">
+                                <option value="" >Course Name</option>
+                                <option value="python">Python Fullstack</option>
+                                <option value="mern">MERN Full Stack Developer</option>
+                                <option value="ui">UI Development</option>
+                                <option value="rjs">React JS</option>
+                                <option value="uiux">UI/UX Designing</option>
+                                <option value="njs">Node JS</option>
+                                <option value="web">Web Designing</option>
+                                <option value="mysql">PHP with MySQL</option>
+                                <option value="d">Digital Marketing</option>
+                                <option value="p">Python</option>
+                            </select>
+                            <p id="courseNote" ></p>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" id="experiance" class="form-control" placeholder="Experiance">
+                        </div>
+                        <div class="col">
+
+                            <input class="form-control" id="choose-file" type="file" placeholder="Choose File">
+                        </div>
+                    </div>
+                    <div class="row m-4">
+                        <textarea class="form-control" placeholder="Message" name="" id="message" cols="30"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="row m-3 text-center px-5">
+                        <div class="col-1">
+                            <input class="form-check-input text-end" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-check-label text-start" for="flexCheckDefault">
+                                Accept Terms & Conditions
+                              </label>
+                        </div>
+                        <p id="checkNote" ></p>
+                    </div>
+                    <input class="btn btn-danger ms-3" type="submit">
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------Faculty registration end-------------- -->
+    <footer class="container-fluid p-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Elearn Infotec</h1>
+                <p>ELearn Infotech offers an excellent Software courses training with end to end support to the
+                    candidates. We offer Web Designing & Development, Digital Markeing, Oracle, SAP, Cloud Modules.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Quick Links</h1>
+                <p>Student Registration</p>
+                <p>Become a trainer</p>
+                <p>New Batch</p>
+                <p>Online Payment</p>
+                <p>Placements</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Reach Us</h1>
+                <p><i class="bi bi-house-door-fill"></i> Plot Number 40, Second Floor,
+
+                    Vittal Rao Nagar,
+
+                    Madhapur, Hyderabad,
+
+                    Telangana 500081</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Contact Us</h1>
+                <p><i class="bi bi-telephone-fill"></i> +91 8464025086</p>
+                <p><i class="bi bi-envelope-fill"></i> info@elearninfotech.com</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <section class="container-fluid bottom text-center">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <p>© 2023 ELearn Infotech.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <p>Refund & Reschedule Policy </p>
+                <p> Privacy Policy </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <p>Designed By ENut Technologies Pvt Ltd.</p>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="icon1 text-center">
+            <i class="bi bi-whatsapp"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon2 text-center">
+            <i class="bi bi-telephone-fill"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon3 text-center">
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon4 text-center">
+            <i class="bi bi-instagram"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon5 text-center">
+            <i class="bi bi-youtube"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon6 text-center">
+            <i class="bi bi-facebook"></i>
+        </div>
+    </section>
+</body>
+
+</html>

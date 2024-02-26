@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/62979f853f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+</head>
+
+<body>
+    <script src="institute.js"></script>
+    <!-- --------------------------------------------header start---------------------------- -->
+    <header class="container-fluid sticky-top p-0">
+        <nav class="navbar navbar-expand-md ">
+            <a href="" class="navbar-brand ms-5">
+                <img src="assets/logo.webp" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-target="#myNav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="myNav" class="collapse navbar-collapse justify-content-end me-5">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="batches.html" class="nav-link">New Batches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courses" class="nav-link">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Registrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ------------------------------------------header end-------------------------- -->
+
+    <section class="container-fluid p-0 demo-reg d-flex justify-content-center flex">
+        <div class="col-4 demo-form ">
+            <form action="finalpage.html" method="post" onsubmit="return demovalidate()">
+                <h1>Register for Demo</h1>
+                <select name="" id="select" class="form-select">
+                    <option value="" hidden>Select training type</option>
+                    <option value="">Classroom training</option>
+                    <option value="">Online training</option>
+                    <option value="">Corporate training</option>
+                </select>
+                <input type="text" id="name" class="form-control" placeholder="Name" aria-label="First name">
+                <p id="nn"></p>
+                <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Last name">
+                <p id="en"></p>
+                <input type="text" id="phone" class="form-control" placeholder="Phone" aria-label="First name">
+                <p id="pn"></p>
+                <textarea class="form-control" placeholder="Message" name="" id="message" cols="30" rows="3"></textarea>
+                <input class="btn btn-danger ms-3" type="submit">
+            </form>
+        </div>
+    </section>
+
+    <section class="container-fluid demo-reg1 p-0 text-center">
+        <div class="demo1 p-5">
+            <h1>Course Overview</h1>
+            <p class="text-center">Kickstart as a Developer career by mastering the extensive Fullstack Development concepts. Register Today
+            </p>
+            <div class="row">
+                <div class="col-6 col-lg-3 col-xl-3 overview px-5 ">
+                    <p><i class="bi bi-calendar3 mb-3"></i></p>
+                    <p>5 months Duration Classroom/Online training</p>
+                </div>
+                <div class="col-6 col-lg-3 col-xl-3 overview px-5">
+                    <p><i class="bi bi-laptop mb-3"></i></p>
+                    <p>Training with Projects
+                        Regular Assignments & Case Studies</p>
+                </div>
+                <div class="col-6 col-lg-3 col-xl-3 overview px-5">
+                    <p><i class="bi bi-pentagon-half mb-3"></i></p>
+                    <p>100% Placement support
+                        Mock Interviews</p>
+                </div>
+                <div class="col-6 col-lg-3 col-xl-3 overview px-5">
+                    <p><i class="bi bi-people-fill mb-3"></i></p>
+                    <p>1-on-1 Mentorship
+                        Class Recording Facility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------course eligibility start------------------------------------>
+    <section class="container-fluid p-5 eligibility">
+        <div class="row">
+            <div class=" col-sm-12 col-xl-4 text-center mb-5">
+                <img src="assets/eligibility-check.webp" class="w-50" alt="">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 px-5">
+                <h1 class="text-center">Course <span class="text-danger">Eligibility</span></h1>
+                <div class="row">
+                    <div class="col-6">
+                        <p><i class="bi bi-check-circle-fill"></i> Any Degree - B. Tech, BSc, B.Com, BBA, etc.</p>
+                    </div>
+                    <div class="col-6">
+                        <p><i class="bi bi-check-circle-fill"></i> Any Degree - B. Tech, BSc, B.Com, BBA, etc.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p><i class="bi bi-check-circle-fill"></i> Any Degree - B. Tech, BSc, B.Com, BBA, etc.</p>
+                    </div>
+                    <div class="col-6">
+                        <p><i class="bi bi-check-circle-fill"></i> Any Degree - B. Tech, BSc, B.Com, BBA, etc.</p>
+                    </div>
+                </div>
+                <a href="register.html" class="text-center">ENROLL THIS COURSE</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------course eligibility end------------------------------------>
+    <!-- ----------------------------------what skills you will learn------------------------------ -->
+    <section class="container-fluid learn flex">
+        <h1 class="text-center">What <span class="text-danger">Skills you will Learn</span></h1>
+        <p class="paragraph"></p>
+        <p class="paragraph mb-5"></p>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3 animate__animated animate__fadeIn">
+                <div class="card">
+                    <p data-bs-target="#course1" data-bs-toggle="collapse" class="card-text"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="course1">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3 animate__animated animate__fadeInDown">
+                <div class="card">
+                    <p data-bs-target="#course2" data-bs-toggle="collapse" class="card-text"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="course2">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3 animate__animated animate__fadeInLeft">
+                <div class="card">
+                    <p data-bs-target="#course3" data-bs-toggle="collapse" class="card-text"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="course3">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------what skills you will learn end------------------------------ -->
+    <!-- -------------------------------------hunting job in hyd start----------------------------------------- -->
+    <section class="container-fluid enroll-reg p-0 ">
+        <div class="enroll p-5">
+            <h6 class="text-center mb-3">STILL HUNTING FOR A FULLSTACK DEVELOPER JOB IN HYDERABAD?</h6>
+            <p class="text-center">All you need is Learn Courses from Industry Expert with Elearn InfoTech</p>
+
+            <form action="finalpage.html" method="post" onsubmit="return jobdemovalidate()">
+                <div class="row ps-5">
+                    <div class="col-sm-8 col-md-3"> <input type="text" id="name1" class="form-control" placeholder="Name">
+                        <p id="namejob"></p>
+                    </div>
+                    <div class="col-sm-8 col-md-3"> <input type="text" id="email1" class="form-control" placeholder="Email">
+                        <p id="emailjob"></p>
+                    </div>
+                    <div class="col-sm-8 col-md-3"> <input type="text" id="phone1" class="form-control" placeholder="Phone">
+                        <p id="phonejob"></p>
+                    </div>
+                    <div class="col-sm-8 col-md-3 "> <input type="submit" class="btn btn-danger px-5"></div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- -------------------------------------hunting job in hyd end----------------------------------------- -->
+    <!-- -------------------------------------course content start------------------------------------------- -->
+    <section class="container content p-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-8 col-xl-8 p-5">
+                <h3>Course <span class="text-danger">Content</span></h3>
+                <div class="card mb-1 animate__animated animate__fadeInDown">
+                    <p class="card-text text-start p-2" data-bs-target="#content1" data-bs-toggle="collapse"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="content1">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+                <div class="card mb-1 animate__animated animate__fadeInLeft">
+                    <p class="card-text text-start p-2" data-bs-target="#content2" data-bs-toggle="collapse"><i
+                            class="fa-solid fa-hand-point-right"></i> Python Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="content2">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+                <div class="card mb-1 animate__animated animate__fadeInUp">
+                    <p class="card-text text-start p-2" data-bs-target="#content3" data-bs-toggle="collapse"><i
+                            class="fa-solid fa-hand-point-right"></i> Java Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="content3">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+                <div class="card mb-1 animate__animated animate__fadeInTopLeft">
+                    <p class="card-text text-start p-2" data-bs-target="#content4" data-bs-toggle="collapse"><i
+                            class="fa-solid fa-hand-point-right"></i> Other Features</p>
+                </div>
+                <div class="collapse text-start px-5" id="content4">
+                    <p><i class="bi bi-arrow-right"></i> Live Projects</p>
+                    <p><i class="bi bi-arrow-right"></i> Material Softcopy</p>
+                    <p><i class="bi bi-arrow-right"></i> Course Complete Certificate</p>
+                    <p><i class="bi bi-arrow-right"></i> Interview Questions</p>
+                    <p><i class="bi bi-arrow-right"></i> Placement Assistance</p>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4  demo ">
+                <form action="finalpage.html" class="book-demo p-5" method="post" onsubmit="return bookdemo()">
+                    <h3>BOOK A LIVE DEMO</h3>
+                    <input type="text" id="name2" class="form-control" placeholder="Name">
+                    <p id="n2"></p>
+                    <input type="text" id="email2" class="form-control" placeholder="Email">
+                    <p id="e2"></p>
+                    <input type="text" id="phone2" class="form-control" placeholder="Phone">
+                    <p id="p2"></p>
+                    <textarea class="form-control" placeholder="Message" id="message2" cols="30" rows="3"></textarea>
+                    <p id="m2"></p>
+                    <input class="form-control" type="submit">
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------course content end--------------------------------------------- -->
+    <!-- -----------------------------------------projects you build start---------------------------------------------- -->
+    <section class="container-fluid projects ">
+        <h3 class="text-center pb-4">Projects <span class="text-danger">you will build</span></h3>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="card">
+                    <p data-bs-target="#projects1" data-bs-toggle="collapse" class="card-text"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="projects1">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="card">
+                    <p data-bs-target="#projects2" data-bs-toggle="collapse" class="card-text"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="projects2">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="card">
+                    <p data-bs-target="#projects3" data-bs-toggle="collapse" class="card-text"><i
+                            class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
+                </div>
+                <div class="collapse text-start px-5" id="projects3">
+                    <p><i class="fa-solid fa-hand-point-right"></i> HTML & HTML5</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> CSS & CSS3</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Java Script</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> JQuery</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> React JS</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
+                    <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------------projects you build  end---------------------------------------------- -->
+    <!-- -----------------------------------------certificate start---------------------------------------------- -->
+    <section class="container certificate">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 p-5">
+                <h3 class="text-start">Certification from <span class="text-danger">ISO 9001:2015 Certified
+                        Company</span></h3>
+                <p>At ELearn InfoTech Fullstack Development Institute in Hyderabad, you get to learn about Fullstack
+                    Development Course completely. The Fullstack Development Training in Hyderabad is conducted by
+                    industry experts who provide complete details with in-depth knowledge about the frontend & backend.
+                    Hands-on experience, downloadable courses and real time learning, you get value to your money. Enrol
+                    for the Fullstack Development Training Course at ELearn Infotech to shape up your life positively.
+                </p>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
+                        <h1 id="count1">45000</h1>
+                        <p>+Registrations</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
+                        <h1 id="count2">32000</h1>
+                        <p>+Placements</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
+                        <h1 id="count3">40</h1>
+                        <p>%Avg sal hike</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
+                        <h1 id="count4">150</h1>
+                        <p>+Hiring Prtn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
+                <img src="assets/certificate.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -----------------------------------------certificate  end---------------------------------------------- --->
+    <!-- -----------------------------------------FAQ's start  ------------------------------------------------- --->
+
+    <section class="container-fluid questions p-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
+                <h3>FAQ's</h3>
+                <div class="card">
+                    <p data-bs-target="#qsn1" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> Full Stack Development Classroom Training</p>
+                    <p class="collapse px-5" id="qsn1"><i class="fa-solid fa-hand-point-right"></i> Full Stack
+                        Development means that you have to develop application from end to end from scratch to live
+                        deployment. 100% placement assistance is offered after the completion of the Full Stack
+                        Developer Course Classroom Training in Hyderabad.</p>
+                </div>
+                <div class="card">
+                    <p data-bs-target="#qsn2" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> Full Stack Development Online Training</p>
+                    <p class="collapse px-5" id="qsn2"><i class="fa-solid fa-hand-point-right"></i> Elearn Infotech Offering Full Stack Developer Online training. Get the skills to work with both back-end and front-end technologies as a full-stack web developer. ELearn InfoTech offers MERN stack online training, Python Fullstack online training, Java full stack online training by most experienced professionals. Our Full Stack Development Trainers are working in full Stack and related technologies for MNC's.</p>
+                </div>
+                <div class="card">
+                    <p data-bs-target="#qsn3" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> Learn Full Stack Developer Course at Home with ELearn InfoTech</p>
+                    <p class="collapse px-5" id="qsn3"><i class="fa-solid fa-hand-point-right"></i>  Our Full Stack Developer Online Course will make you become a professional Full Stack Developer in just 4 months. Get Hands-On Knowledge with realtime Projects from this Full Stack Developer Course. We are rated as “Leading Full Stack Development Online Training Institute” from Hyderabad with Placement guidance.</p>
+                </div>
+                <div class="card">
+                    <p data-bs-target="#qsn4" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> Full Stack Developer Training with Placement Assistance</p>
+                    <p class="collapse px-5" id="qsn4"><i class="fa-solid fa-hand-point-right"></i> ELearn InfoTech is the best Full Stack Development Institute for Full Stack training with 100% Placement assistance. After completing the Full Stack Development training, we conduct mock interviews and separate the students as per the portfolio as fresher and experienced.</p>
+                </div>
+                <div class="card">
+                    <p data-bs-target="#qsn5" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> What about Full Stack Developer Course Trainers Experience?</p>
+                    <p class="collapse px-5" id="qsn5"><i class="fa-solid fa-hand-point-right"></i>Our Full Stack Developer Course Trainers are 8+ years of experience. Our Full Stack Development Course curriculam also designed as per industry requirement.</p>
+                </div>
+                <div class="card">
+                    <p data-bs-target="#qsn6" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> What are the Pre-Requisites for Full Stack Developer Training?</p>
+                    <p class="collapse px-5" id="qsn6"><i class="fa-solid fa-hand-point-right"></i>There are no particular pre-requisites to join for our advanced program of Full Stack Development Training.</p>
+                </div>
+                <div class="card">
+                    <p data-bs-target="#qsn7" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> What are the Career Opportunities of Full Stack Developers?</p>
+                    <p class="collapse px-5" id="qsn7"><i class="fa-solid fa-hand-point-right"></i>The demand for good Full Stack Developers in India is increasing everyday. all Software Companies are looking for people who can build great UI, React JS, Node JS, MongoDB with relevant technologies.</p>
+                </div>
+                <div id="read-more" class="collapse card">
+                    <p data-bs-target="#qsn8" data-bs-toggle="collapse" class="card-text text-start"><i
+                            class="fa-solid fa-hand-point-right"></i> What are the Career Opportunities of Full Stack Developers?</p>
+                    <p class="collapse px-5" id="qsn8"><i class="fa-solid fa-hand-point-right"></i>The demand for good Full Stack Developers in India is increasing everyday. all Software Companies are looking for people who can build great UI, React JS, Node JS, MongoDB with relevant technologies.</p>
+                </div>
+                <h5 data-bs-target="#read-more" data-bs-toggle="collapse" class="text-danger">Read more</h5>
+                
+
+                
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 job-roles">
+                <h3>Suitable <span class="text-danger">Job Roles</span></h3>
+                <p>After completing the program, you'll have access to the best-in-class placement assistance. More than 100+ top IT companies have hired Elearn Infotech learners for various roles with salaries up to ₹8 LPA.</p>
+                <h6><i class="fa-solid fa-hand-point-right"></i>  Fullstack Developer</h6>
+                <h6><i class="fa-solid fa-hand-point-right"></i>  Web Developer</h6>
+                <h6><i class="fa-solid fa-hand-point-right"></i>  UI/Frontend Developer</h6>
+                <h6><i class="fa-solid fa-hand-point-right"></i>  Backend Developer</h6>
+                <h6><i class="fa-solid fa-hand-point-right"></i>  Software Enginer </h6>
+                <h6><i class="fa-solid fa-hand-point-right"></i>  Web Designer </h6>
+            </div>
+            
+        </div>
+    </section>
+    <!-- -----------------------------------------FAQ's  end---------------------------------------------------- --->
+    <!-- -----------------------------------------refer  start---------------------------------------------------- --->
+    <section class="container-fluid refer">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 earn text-center">
+                <h3>Refer <span class="text-danger">and Earn</span></h3>
+                <p>Refer & Earn is a program that lets you earn a reward for every friend you refer who enrolls for one of our course. Your referred friends save, too, by getting a discount off their course fees (1000 RS). This program is applicable for everyone including our existing student or passed out student.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5 text-center">
+                <img src="assets/referandearn2.webp"  alt="">
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------------refer  end---------------------------------------------------- ----->
+
+
+    <!-- ------------------------------------------footer start---------------------------- -->
+    <footer class="container-fluid p-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Elearn Infotec</h1>
+                <p>ELearn Infotech offers an excellent Software courses training with end to end support to the
+                    candidates. We offer Web Designing & Development, Digital Markeing, Oracle, SAP, Cloud Modules.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Quick Links</h1>
+                <p>Student Registration</p>
+                <p>Become a trainer</p>
+                <p>New Batch</p>
+                <p>Online Payment</p>
+                <p>Placements</p>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Reach Us</h1>
+                <p><i class="bi bi-house-door-fill"></i> Plot Number 40, Second Floor,
+
+                    Vittal Rao Nagar,
+
+                    Madhapur, Hyderabad,
+
+                    Telangana 500081</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
+                <h1>Contact Us</h1>
+                <p><i class="bi bi-telephone-fill"></i> +91 8464025086</p>
+                <p><i class="bi bi-envelope-fill"></i> info@elearninfotech.com</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <section class="container-fluid bottom text-center">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <p>© 2023 ELearn Infotech.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <p>Refund & Reschedule Policy </p>
+                <p> Privacy Policy </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <p>Designed By ENut Technologies Pvt Ltd.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- --------------------------------------------footer end------------------------------ -->
+    <!-- ---------------------------------------------icons---------------------------------------- -->
+    <section>
+        <div class="icon1 text-center">
+            <i class="bi bi-whatsapp"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon2 text-center">
+            <i class="bi bi-telephone-fill"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon3 text-center">
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon4 text-center">
+            <i class="bi bi-instagram"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon5 text-center">
+            <i class="bi bi-youtube"></i>
+        </div>
+    </section>
+    <section>
+        <div class="icon6 text-center">
+            <i class="bi bi-facebook"></i>
+        </div>
+    </section>
+    <!-- -------------------------------------------------end icons------------------- -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="res/countMe/countMe.min.js"></script>
+
+    <script>
+        $("#count1").countMe(0,1000);
+        $("#count2").countMe(0,0);
+        $("#count3").countMe(0,100);
+        $("#count4").countMe(0,100);
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout:1000,
+            
+            
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
